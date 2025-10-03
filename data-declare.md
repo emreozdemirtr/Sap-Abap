@@ -1,13 +1,13 @@
-# Internal Tables
+# Data Declare
 
 ## Old Syntax
 <pre><code class="language-abap">
-DATA: lt_tab TYPE TABLE OF string.
-APPEND 'Hello' TO lt_tab.
+DATA: lv_data TYPE i.
+      lv_data = '1'.
 </code></pre>
 
 ## New Syntax
 <pre><code class="language-abap">
-DATA(lt_tab) = VALUE stringtab( ( 'Hello' ) ).
+DATA(lv_data) = '1'.
 </code></pre>
 
